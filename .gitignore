@@ -64,3 +64,10 @@ compile_commands.json
 # Eclipse IDE
 .project
 .cproject
+
+# OSM Map Tile
+/MapTiles/
+
+# Avitab Produced Files
+avitab.prf
+AviTab.log

@@ -64,6 +64,7 @@ void AviTab::startApp() {
     env->createCommand("AviTab/app_notes", "Notes App", [this] (CommandState s) { if (s == CommandState::START) showApp(AppId::NOTES); });
     env->createCommand("AviTab/app_navigraph", "Navigraph App", [this] (CommandState s) { if (s == CommandState::START) showApp(AppId::NAVIGRAPH); });
     env->createCommand("AviTab/app_about", "About App", [this] (CommandState s) { if (s == CommandState::START) showApp(AppId::ABOUT); });
+    env->createCommand("AviTab/app_acars", "ACARS", [this] (CommandState s) { if (s == CommandState::START) showApp(AppId::ACARS); });
 
     env->createCommand("AviTab/click_left", "Left click", [this] (CommandState s) { handleLeftClick(s != CommandState::END); });
     env->createCommand("AviTab/wheel_up", "Wheel up", [this] (CommandState s) { if (s == CommandState::START) handleWheel(true); });
